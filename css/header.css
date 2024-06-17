@@ -1,31 +1,27 @@
-.header{
+.header {
     grid-column-start: 1;
     grid-column-end: 4;
-    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
     width: 100%;
-
 }
 
-.log{
+.log {
     background-color: #C6C6C8;
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
-
     font-size: 2rem;
     font-weight: 600;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav{
+nav {
     width: 90%;
     height: 5rem;
     display: flex;
@@ -34,38 +30,52 @@ nav{
     justify-content: space-evenly;
 }
 
-nav div{
+nav div {
     width: 10rem;
     height: 3.5rem;
     background-color: black;
     color: white;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     font-weight: 600;
     cursor: pointer;
 }
 
-nav div:hover{
+nav div:hover {
     transition: 0.5s;
     background-color: gray;
-
 }
 
-.menu{
+.menu {
     display: none;
 }
 
-.btn{
+.menu div {
+    width: 10rem;
+    height: 3.5rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu div:hover {
+    transition: 0.5s;
+    background-color: rgb(155, 155, 202);
+}
+
+.btn {
     width: 10rem;
     height: 3.5rem;
     background-color: black;
     color: white;
     cursor: pointer;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -73,8 +83,33 @@ nav div:hover{
     font-weight: 600;
 }
 
-.btn:hover{
+.btn:hover {
     transition: 0.5s;
     background-color: rgb(155, 155, 202);
+}
 
+/* Media query para pantallas de hasta 375px de ancho */
+@media screen and (max-width: 375px) {
+    .header {
+        flex-direction: column; /* Cambiar dirección a columna */
+        padding: 0.5rem; /* Reducir el padding */
+    }
+
+    nav {
+        display: none; /* Ocultar el menú principal */
+    }
+
+    .menu {
+        display: flex; /* Mostrar el menú alternativo */
+        width: 100%; /* Ajustar ancho completo */
+        justify-content: space-around; /* Distribuir elementos equitativamente */
+        align-items: center; /* Centrar elementos */
+        padding: 0.5rem 0; /* Añadir padding superior e inferior */
+    }
+
+    .menu div {
+        width: auto; /* Ancho automático según contenido */
+        height: 3.5rem; /* Mantener altura */
+        margin: 0.5rem; /* Añadir margen entre elementos */
+    }
 }

@@ -3,9 +3,20 @@
     height: 60rem;
     margin: auto;
     margin-top: 1%;
-
     display: grid;
     grid-template-columns: 10% 1fr 1fr;
     grid-template-rows: 10% 40% 1fr;
     gap: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    .root {
+        width: 95%; /* Mantener el 95% del ancho */
+        height: auto; /* Altura automática según el contenido */
+        margin-top: 1rem; /* Cambiar margen superior a 1rem */
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+        grid-template-rows: auto; /* Altura automática de las filas */
+        gap: 5px; /* Reducir el espacio de separación */
+        padding: 1rem; /* Añadir padding para separación del borde */
+    }
 }
