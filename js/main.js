@@ -1,3 +1,4 @@
+
 import { cuadroLateral } from "./cuadroLateral.js";
 import { header } from "./header.js";
 

@@ -1,18 +1,19 @@
-
-.contenedor {
+.contenedor{
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    border-radius: 10px;
+    width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    justify-content: space-between;
 }
 
-img {
+img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,8 +22,8 @@ img {
     height: 15rem;
 }
 
-a,
-img {
+
+a, img{
     color: black;
     text-decoration: none;
     margin: 1.5rem;
@@ -32,48 +33,23 @@ img {
     align-items: center;
 }
 
-.github {
-    background-color: black;
-    color: white;
+.github{
+    background-color: seagreen;
     width: 10rem;
     height: 2rem;
-    margin-bottom: auto;
+    margin-left: auto;
+
     font-size: 2rem;
     font-weight: 600;
+
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+
 }
 
-.github:hover {
+.github:hover{
     transition: 1.5ms;
-    background-color: gray;
-}
-
-/* Media query para pantallas de hasta 375px de ancho */
-@media screen and (max-width: 375px) {
-    .contenedor {
-        grid-column-start: 1; /* Ajuste de posición en grid */
-        grid-column-end: 5; /* Ampliar el ancho en grid */
-        grid-row-start: 1; /* Ajuste de posición en grid */
-        grid-row-end: 4; /* Ampliar la altura en grid */
-        flex-direction: column; /* Cambio a dirección de columna */
-        align-items: center; /* Centrar elementos */
-        gap: 1rem; /* Reducir espacio entre elementos */
-    }
-
-    img {
-        width: 100%; /* Ajustar imagen al ancho completo */
-        height: auto; /* Permitir ajuste proporcional de altura */
-        max-height: 20rem; /* Limitar altura máxima */
-    }
-
-    .github {
-        width: 100%; /* Ajustar ancho completo */
-        max-width: 15rem; /* Limitar ancho máximo */
-        height: 3rem; /* Ajustar altura */
-        font-size: 1.5rem; /* Reducir tamaño de fuente */
-        border-radius: 10px; /* Reducir radio de borde */
-    }
+    background-color: rgb(26, 68, 44);
 }

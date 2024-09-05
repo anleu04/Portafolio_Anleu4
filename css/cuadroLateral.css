@@ -1,42 +1,45 @@
-.cuadroLateral{
+.cuadroLateral {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    align-items: center;
-    flex-direction: column;
 }
-.info{
+
+.info {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-self: center;
 }
-.nombre{
+
+.nombre {
     padding: 1rem;
     font-size: 3rem;
     font-weight: 600;
-    
 }
 
+.skills-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
-/* Media query para pantallas de hasta 375px de ancho */
-@media screen and (max-width: 375px) {
-    .cuadroLateral {
-        grid-column-start: 1; /* Ajuste de posición en grid */
-        grid-column-end: 5; /* Ampliar el ancho en grid */
-        grid-row-start: 4; /* Ajuste de posición en grid */
-        grid-row-end: 5; /* Ampliar la altura en grid */
-    }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
 
-    .info {
-        flex-direction: column; /* Cambio a dirección de columna */
-        align-items: center; /* Centrar elementos */
-        text-align: center; /* Alinear texto al centro */
-    }
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .nombre {
-        font-size: 2rem; /* Reducir tamaño de fuente */
-        padding: 0.5rem; /* Reducir el padding */
-    }
+.grid-item img {
+    max-width: 10rem;
+    max-height: 10rem;
 }

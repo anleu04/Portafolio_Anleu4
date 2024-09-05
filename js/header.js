@@ -1,14 +1,17 @@
 let header = `
-    <a href="https://github.com/anleu04"><img src="" alt="" class="log"></a>
+    <a href="https://github.com/anleu04"><img src="https://raw.githubusercontent.com/anleu04/img/main/foto.jpeg" alt="" class="log"></a>
     <nav>
-        <div>Opcion_1</div>
-        <div>Opcion_2</div>
-        <div>Opcion_3</div>
-        <div>Opcion_4</div>
-        <div>Opcion_5</div>
+        <div>Proyectos</div>
+        <div> Mantenimientos</div>
+        <div>Redes Sociales</div>
+        <div>Sobre Mi</div>
+
     </nav>
-    <div class="btn">Opcion_6</div>
-    
-    
+    <div class="btn">Info. Personal</div>
+    <div class="menu">
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </div>
 `;
-export {header}
+export{header}

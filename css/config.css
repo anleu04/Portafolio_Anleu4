@@ -5,16 +5,6 @@
 }
 
 html{
-    font-size: 10px;
+    font-size: 15px;
     font-family: monospace;
-}
-
-@media screen and (max-width: 375px) { 
-    html {
-        font-size: 8px; /* Reducir tamaño de fuente para pantallas más pequeñas */
-    }
-
-    * {
-        margin: 0.5rem; /* Añadir un pequeño margen a todos los elementos */
-    }
 }
